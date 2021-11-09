@@ -1,0 +1,6 @@
+package org.chenliang.spring.template.model;
+
+public enum Role {
+  ROLE_USER,
+  ROLE_ADMIN
+}

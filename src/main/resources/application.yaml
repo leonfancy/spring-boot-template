@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost:43306/templatedb"
+    username: "root"
+    password: "any"
