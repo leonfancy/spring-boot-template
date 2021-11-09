@@ -30,7 +30,7 @@ public class SecurityConfig {
           .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
           .and()
           .requestMatchers()
-          .antMatchers("/signup", "/login")
+          .antMatchers("/signup", "/login", "/swagger-ui.html", "/swagger-ui/**", "/v3/api-docs/**")
           .and()
           .authorizeRequests()
           .anyRequest().anonymous();
