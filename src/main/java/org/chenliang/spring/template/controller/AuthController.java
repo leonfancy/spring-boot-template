@@ -1,5 +1,6 @@
 package org.chenliang.spring.template.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.chenliang.spring.template.model.dto.CreateUserRequest;
 import org.chenliang.spring.template.model.dto.LoginRequest;
 import org.chenliang.spring.template.model.dto.TokenResponse;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @RestController
+@Tag(name = "Auth", description = "Login and register API")
 public class AuthController {
   private final AuthService authService;
 

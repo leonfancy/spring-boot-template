@@ -1,5 +1,6 @@
 package org.chenliang.spring.template.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.chenliang.spring.template.model.dto.ResetPasswordRequest;
 import org.chenliang.spring.template.model.dto.UpdateUserRequest;
 import org.chenliang.spring.template.model.dto.UserResponse;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @RestController
+@Tag(name = "User", description = "API for current login user")
 public class UserController {
   private final UserService userService;
 
